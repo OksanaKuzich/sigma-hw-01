@@ -1,0 +1,82 @@
+:root {
+  --accent-color: #01996d;
+  --first-text-color: #292929;
+  --second-text-color: #000000;
+  --background-color: #fff;
+
+  /* --accent-text-color: #2196f3;
+  --hover-btn-color: #188ce8;
+  --logo-text-color: #000000;
+  --icon-color: #afb1b8;
+
+  --background-footer-color: #2f303a;
+  --background-cards-color: #f5f4fa;
+
+  --border-footer-color: #ececec;
+  --border-cards-color: #eeeeee; */
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: var(--first-text-color);
+  background-color: var(--background-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+}
+
+.container {
+  width: 1370px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 80px;
+  height: 23px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+
+.navList {
+  display: flex;
+  gap: 72px;
+}
+
+/* .logoLink {
+  margin-right: 172px;
+} */
+
+.btn-none {
+  border: none;
+  background-color: transparent;
+  margin-right: 35px;
+}
+
+.btn {
+  width: 183px;
+  height: 51px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}

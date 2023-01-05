@@ -4,32 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Alivio</title>
   </head>
   <body>
-    <header>
-      <a href="'">Alivio</a>
+    <header class="container header">
+      <a class="logoLink" href="./index.html">
+        <svg class="logo">
+            <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
       <nav>
-        <ul>
+        <ul class="navList">
           <li><a href="">Why Alivio</a></li>
           <li><a href="">Solutions</a></li>
           <li><a href="">Community</a></li>
           <li><a href="">Pricing</a></li>
         </ul>
       </nav>
-      <button type="'button">Sign in</button>
-      <button type="'button">Start Trial</button>
+      <div>
+      <button class="btn-none" type="button">Sign in</button>
+      <button  class="btn" type="button">Start Trial</button>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="container">
         <h1>Be aware, Manage well.</h1>
         <p>
           Everyone experiences stress in different ways. Let Alivio guide you,
           in a personalized journal experience, to overcome your stress.
         </p>
-        <button type="'button">Find Your Way</button>
+        <button type="button">Find Your Way</button>
       </section>
-      <section>
+      <section class="container">
         <h2>How it works</h2>
         <p>Understand & Release the stress in 3 steps</р>
         <p>
@@ -72,10 +89,10 @@
       <section>
         <h2>Let's hear about Kayla's success story</h2>
         <p>See how well Alivio works in a real customer’s life.</p>
-        <button type="'button">Let’s get started</button>
+        <button type="button">Let’s get started</button>
         <img src="" />
       </section>
-      <section>
+      <section class="container">
         <img src="" />
         <h2>Our product</h2>
         <p>You tell us your stress, We make your diary</p>
@@ -83,7 +100,7 @@
           Everyone experiences it, and in different ways. Let Alivio guide you,
           in a personalized journal experience, to overcome your stress.
         </p>
-        <button type="'button">Find Your Way</button>
+        <button type="button">Find Your Way</button>
       </section>
     </main>
     <footer>
