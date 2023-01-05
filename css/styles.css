@@ -265,7 +265,6 @@ button {
 
 .story-subtitle {
   margin-bottom: 57px;
-  font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 25px;
   line-height: 1.57;
@@ -274,4 +273,118 @@ button {
 
 .story-wrapper {
   width: 580px;
+}
+
+.card {
+  margin-left: 60px;
+  position: relative;
+  background-image: url("../images/person-card.png");
+  background-color: var(--accent-second-color);
+  width: 638px;
+  height: 573px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 18px;
+}
+
+.person-card {
+  display: inline-block;
+  position: absolute;
+  top: 430px;
+  left: -65px;
+  filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+}
+
+.container-card {
+  display: flex;
+  gap: 87px;
+  padding-top: 120px;
+  padding-bottom: 243px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.57;
+  color: var(--fourth-text-color);
+  margin-bottom: 10px;
+}
+
+.card-subtitle {
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.57;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.card-content {
+  width: 530px;
+  line-height: 1.55;
+  color: var(--third-text-color);
+  margin-bottom: 40px;
+}
+
+.card-wrapper {
+  width: 584px;
+}
+
+.footer {
+  background-color: var(--background-color-footer);
+}
+
+.logo-footer {
+  width: 108px;
+  height: 55px;
+  margin-bottom: 60px;
+}
+
+.container-footer {
+  padding-top: 95px;
+  padding-bottom: 39px;
+}
+
+.nav-link-footer {
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--background-color);
+}
+
+.nav-list-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 76px;
+  border-radius: 50%;
+  background: var(--background-color);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-facebook {
+  width: 12px;
+  height: 24px;
+}
+
+.icon-instagram {
+  width: 32px;
+  height: 30px;
+}
+
+.icon-twitter {
+  width: 32px;
+  height: 24px;
+}
+
+.icon-list-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
