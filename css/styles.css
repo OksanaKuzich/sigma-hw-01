@@ -1,21 +1,14 @@
 :root {
   --accent-color: #01996d;
+  --accent-second-color: rgba(1, 153, 109, 0.2);
+
   --main-text-color: #292929;
   --second-text-color: #000000;
   --third-text-color: #484848;
   --fourth-text-color: #424242;
+
   --background-color: #fff;
-
-  /* --accent-text-color: #2196f3;
-  --hover-btn-color: #188ce8;
-  --logo-text-color: #000000;
-  --icon-color: #afb1b8;
-
-  --background-footer-color: #2f303a;
-  --background-cards-color: #f5f4fa;
-
-  --border-footer-color: #ececec;
-  --border-cards-color: #eeeeee; */
+  --background-color-footer: #245852;
 }
 
 body {
@@ -168,4 +161,117 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 134px;
+}
+
+.step-list {
+  display: flex;
+  gap: 95px;
+  padding-bottom: 255px;
+}
+
+.step-item {
+  position: relative;
+  width: 392px;
+}
+
+.step-item:nth-of-type(1) .step-title {
+  left: 88px;
+}
+.step-item:nth-of-type(2) .step-title {
+  left: 79px;
+}
+.step-item:nth-of-type(3) .step-title {
+  left: 124px;
+}
+
+.step {
+  font-size: 150px;
+  font-family: Georgia, serif;
+  color: var(--accent-second-color);
+  line-height: 1.5;
+  margin-bottom: 65px;
+}
+
+.step-down {
+  position: relative;
+  top: 204px;
+}
+
+.step-title {
+  position: absolute;
+  top: 137px;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.step-subtitle {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--fourth-text-color);
+  text-align: left;
+}
+
+.img-person {
+  margin-top: 60px;
+}
+
+.img-write {
+  margin-top: 37px;
+}
+
+.img-avilio {
+  margin-top: 48px;
+}
+
+.img-screen {
+  position: absolute;
+  bottom: 127px;
+  right: 0;
+  border-radius: 4px;
+  background: linear-gradient(
+    122.77deg,
+    rgba(24, 24, 24, 0.2) 2.51%,
+    rgba(196, 196, 196, 0) 95.42%
+  );
+}
+
+.container-story {
+  width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 31px;
+  background-color: var(--background-color-footer);
+  padding-top: 229px;
+  padding-bottom: 176px;
+  padding-left: 207px;
+}
+
+.img-video {
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.story-title {
+  margin-bottom: 33px;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.57;
+  color: var(--background-color);
+}
+
+.story-subtitle {
+  margin-bottom: 57px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.57;
+  color: var(--background-color);
+}
+
+.story-wrapper {
+  width: 580px;
 }
