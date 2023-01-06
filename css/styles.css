@@ -126,12 +126,8 @@ button {
   padding-bottom: 336px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(0, 0, 0, 0.1);
-  background: linear-gradient(
-      112.58deg,
-      #ffffff 18.15%,
-      rgba(255, 255, 255, 0) 53.07%
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    linear-gradient(112.58deg, #ffffff 18.15%, rgba(255, 255, 255, 0) 53.07%),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
