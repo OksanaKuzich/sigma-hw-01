@@ -53,6 +53,13 @@ button {
   width: 80px;
   height: 23px;
   margin-right: 172px;
+  transition: all 1s ease-in-out;
+}
+
+.logo:hover,
+.logo:focus {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .header {
@@ -236,6 +243,10 @@ button {
   );
 }
 
+.container-story-bg {
+  background-color: var(--background-color-footer);
+}
+
 .container-story {
   width: 1920px;
   margin-left: auto;
@@ -243,7 +254,6 @@ button {
   display: flex;
   align-items: center;
   gap: 31px;
-  background-color: var(--background-color-footer);
   padding-top: 229px;
   padding-bottom: 176px;
   padding-left: 207px;
@@ -338,8 +348,14 @@ button {
   width: 108px;
   height: 55px;
   margin-bottom: 60px;
+  transition: all 1s ease-in-out;
 }
 
+.logo-footer:hover,
+.logo-footer:focus {
+  cursor: pointer;
+  transform: scale(1.2);
+}
 .container-footer {
   padding-top: 95px;
   padding-bottom: 39px;
@@ -349,6 +365,12 @@ button {
   font-weight: 600;
   font-size: 25px;
   color: var(--background-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-link-footer:hover,
+.nav-link-footer:focus {
+  color: var(--accent-color);
 }
 
 .nav-list-footer {
@@ -364,7 +386,28 @@ button {
   width: 82px;
   height: 76px;
   border-radius: 50%;
-  background: var(--background-color);
+  background-color: var(--background-color);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  fill: var(--background-color);
+  background-image: conic-gradient(
+    from 180deg at 50% 50%,
+    #80a4ce 0deg,
+    #f289aa 60deg,
+    #c68bf0 106.09deg,
+    #d164da 153.75deg,
+    #c963e8 221.25deg,
+    #bfc2e8 258.75deg,
+    #ffc999 288.75deg,
+    #d0d8c9 315deg,
+    #bad0f1 334.13deg,
+    #ced8cb 358.97deg,
+    rgba(255, 255, 255, 0) 360deg
+  );
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -387,4 +430,45 @@ button {
   display: flex;
   flex-direction: row;
   gap: 50px;
+  margin-right: 287px;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 477px;
+  margin-top: 26px;
+}
+
+.icon-market {
+  width: 202px;
+  height: 65px;
+  transition: all 1s ease-in-out;
+}
+
+.icon-market:hover,
+.icon-market:focus {
+  transform: scale(1.1);
+}
+
+.icon-market-group {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.footer-subtitle {
+  margin-right: -75px;
+  align-self: flex-end;
+  padding-bottom: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: 0.005em;
+  color: var(--background-color);
+}
+
+.link-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
