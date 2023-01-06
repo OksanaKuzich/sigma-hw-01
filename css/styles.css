@@ -123,7 +123,6 @@ button {
   max-width: 1920px;
   height: 895px;
   padding-top: 175px;
-  padding-bottom: 336px;
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
@@ -145,7 +144,7 @@ button {
 
 .hero-subtitle {
   width: 420px;
-  margin-bottom: 58px;
+  margin-bottom: 50px;
   line-height: 1.55;
   color: var(--third-text-color);
 }
@@ -182,7 +181,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 134px;
+  margin-bottom: 100px;
 }
 
 .step-list {
@@ -207,21 +206,26 @@ button {
 }
 
 .step {
+  display: block;
   font-size: 150px;
   font-family: Georgia, serif;
   color: var(--accent-second-color);
-  line-height: 1.5;
-  margin-bottom: 65px;
+  margin-bottom: 30px;
 }
 
-.step-down {
+.step-write-down {
   position: relative;
-  top: 204px;
+  top: 285px;
+}
+
+.step-alivio-down {
+  position: relative;
+  top: 45px;
 }
 
 .step-title {
   position: absolute;
-  top: 137px;
+  top: 110px;
   font-family: Georgia, serif;
   font-size: 30px;
   font-weight: 700;
@@ -234,16 +238,23 @@ button {
   text-align: left;
 }
 
+.step-item .step-subtitle:nth-of-type(1) {
+  width: 382px;
+}
+
 .img-person {
   margin-top: 60px;
+  border-radius: 12px;
 }
 
 .img-write {
   margin-top: 37px;
+  border-radius: 12px;
 }
 
 .img-avilio {
   margin-top: 48px;
+  border-radius: 12px;
 }
 
 .img-screen-wrapper {
@@ -284,6 +295,8 @@ button {
 }
 
 .img-video {
+  width: 895px;
+  height: 516px;
   border-radius: 16px;
 }
 
@@ -291,11 +304,11 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 895px;
+  height: 516px;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 16px;
-  z-index: 100;
+  z-index: 10;
 }
 
 .wrapper-shadow {
