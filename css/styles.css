@@ -76,10 +76,22 @@ button {
   font-weight: 500;
 }
 
+.nav-link {
+  transition: all 1s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.btn-none:hover,
+.btn-none:focus {
+  color: var(--accent-color);
+}
+
 .btn-none {
   border: none;
   background-color: transparent;
   margin-right: 35px;
+  cursor: pointer;
 }
 
 .btn {
@@ -87,6 +99,13 @@ button {
   border-style: none;
   background-color: var(--accent-color);
   color: var(--background-color);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--background-color-footer);
 }
 
 .btn-header {
@@ -380,6 +399,7 @@ button {
 }
 
 .icon-link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -388,12 +408,18 @@ button {
   border-radius: 50%;
   background-color: var(--background-color);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
+  z-index: 1;
 }
 
-.icon-link:hover,
-.icon-link:focus {
-  fill: var(--background-color);
+.icon-link::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
   background-image: conic-gradient(
     from 180deg at 50% 50%,
     #80a4ce 0deg,
@@ -408,6 +434,18 @@ button {
     #ced8cb 358.97deg,
     rgba(255, 255, 255, 0) 360deg
   );
+  z-index: -1;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.icon-link:hover::before {
+  opacity: 1;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  fill: var(--background-color);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
