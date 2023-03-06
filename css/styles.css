@@ -1,12 +1,10 @@
 :root {
   --accent-color: #01996d;
   --accent-second-color: rgba(1, 153, 109, 0.2);
-
   --main-text-color: #292929;
   --second-text-color: #000000;
   --third-text-color: #484848;
   --fourth-text-color: #424242;
-
   --background-color: #fff;
   --background-color-footer: #245852;
 }
@@ -549,7 +547,7 @@ button {
 .icon-link:hover,
 .icon-link:focus {
   fill: var(--background-color);
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .icon-facebook {
